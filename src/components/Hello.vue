@@ -2,6 +2,7 @@
   <div class="hello">
     <h1>{{ msg }}</h1>
     <h1 v-once>This will not update: {{ staticMsg }}</h1>
+    <button v-bind:disabled="isButtonDisabled">Button</button>
     <h2>Essential Links</h2>
     <ul>
       <li><a href="https://vuejs.org" target="_blank">Core Docs</a></li>
@@ -27,7 +28,8 @@ export default {
   data () {
     return {
       msg: 'Welcome to Your Vue.js App',
-      staticMsg: 'This is a static message that cannot change'
+      staticMsg: 'This is a static message that cannot change',
+      isButtonDisabled: false
     }
   },
   beforeCreate () {
