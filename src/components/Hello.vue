@@ -27,6 +27,30 @@ export default {
     return {
       msg: 'Welcome to Your Vue.js App'
     }
+  },
+  beforeCreate () {
+    console.log('beforeCreate called')
+  },
+  created () {
+    console.log('created called')
+  },
+  beforeMount () {
+    console.log('beforeMount called')
+  },
+  mounted () {
+    console.log('mounted called')
+  },
+  beforeUpdate () {
+    console.log('beforeUpdate called')
+  },
+  updated () {
+    console.log('updated called')
+  },
+  beforeDestroy () {
+    console.log('beforeDestroy called')
+  },
+  destroyed () {
+    console.log('destroyed called')
   }
 }
 </script>
